@@ -5,25 +5,29 @@ authors: ["community"]
 updated: "2025-09-27"
 ---
 
-# 🚀 Your First Avalanche Smart Contract
+# Your First Avalanche Smart Contract
 
-Welcome to your very first smart contract exercise!  
-In this challenge, you’ll deploy a **super simple contract** to the **Fuji Testnet**.
+In this challenge, you’ll deploy a **super simple contract** to the Fuji Testnet.  
+If you succeed, you’ll earn an NFT certificate!
 
 ---
 
-## 🪙 Get Test AVAX
+## Get Test Funds
 
 To deploy a contract, you’ll need some test AVAX on the Fuji Testnet.  
 Claim free tokens here:  
-👉 [Avalanche Faucet](https://build.avax.network/docs/dapps/end-to-end/fuji-workflow#faucet)
+ [Get Test Funds (Faucet)](https://build.avax.network/docs/dapps/smart-contract-dev/get-test-funds)
+
+** Step-by-step guide:**  
+**[Deploy with Remix IDE on Avalanche](https://build.avax.network/docs/dapps/smart-contract-dev/deploy-with-remix-ide)**
 
 ---
 
-## 📋 The Task
+## The Task
 
 1. Open [Remix IDE](https://remix.ethereum.org)  
-2. Paste the following code into a new Solidity file:
+2. Create a new Solidity file (for example, **HelloAvalanche.sol**) and paste the following code:
+
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -32,3 +36,4 @@ pragma solidity ^0.8.20;
 contract UnburnableToken {
     string public message = "Hello Avalanche!";
 }
+
