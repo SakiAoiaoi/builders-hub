@@ -5,33 +5,49 @@ updated: 2025-09-28
 authors: [martineckardt]
 icon: Terminal
 ---
-import { Step, Steps } from 'fumadocs-ui/components/steps';
 
-In this section, you will learn how to interact with a deployed smart contract.  
-You will explore the difference between reading state (calls) and updating state (transactions).
+# Interact with a Smart Contract
+
+In this challenge, you will interact with a deployed contract on the Fuji Testnet.  
+If you succeed, you will earn an NFT certificate.
 
 ---
 
-<Steps>
-<Step>
+## Get Test Funds
 
-### 1. Reading State (call)
+To deploy and interact, you need test AVAX on Fuji.  
+[Get Test Funds](https://build.avax.network/docs/dapps/smart-contract-dev/get-test-funds)
 
-For the `HelloWorld` contract, you can call the `message()` function:
+---
 
-- Open the deployed contract in Remix or [SnowTrace Fuji](https://testnet.snowtrace.io/).  
-- Call the `message()` function.  
-- Reading data is **free** and does not consume gas.  
+## Steps
 
-</Step>
-
-<Step>
-
-### 2. Writing State (transaction)
-
-Let’s extend the contract with an update function:
+1. Open [Remix IDE](https://remix.ethereum.org).  
+2. Create a new Solidity file (e.g., **HelloAvalanche.sol**) and paste:
 
 ```solidity
-function setMessage(string calldata _msg) external {
-    message = _msg;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract UnburnableToken {
+    string public message = "Hello Avalanche!";
 }
+```
+
+# Submit Your Contract
+
+Great job deploying your first contract 🎉  
+
+Next, copy your **contract address** from Remix.
+
+![Remix Deployment Example](/images/deploy-example.png)
+
+---
+
+## Submission
+
+Use the form below to submit your contract address:  
+[Submit Contract Address](https://example.com/submit)
+
+If the address is valid, you will receive an NFT certificate (coming soon ✨).
+
