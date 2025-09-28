@@ -1,14 +1,37 @@
-# Submit Your Contract
+---
+title: Interact with a Smart Contract
+description: Learn how to read from and write to a deployed smart contract.
+updated: 2025-09-28
+authors: [martineckardt]
+icon: Terminal
+---
+import { Step, Steps } from 'fumadocs-ui/components/steps';
 
-Great job deploying your first contract 🎉
+In this section, you will learn how to interact with a deployed smart contract.  
+You will explore the difference between reading state (calls) and updating state (transactions).
 
-Next, copy your **contract address** from Remix.  
-![Remix Deployment Example](/images/deploy-example.png)
+---
 
+<Steps>
+<Step>
 
-## Submission
+### 1. Reading State (call)
 
-Use the form below to submit your contract address:  
-[Submit Contract Address](https://example.com/submit)
+For the `HelloWorld` contract, you can call the `message()` function:
 
-If the address is valid, you will receive an NFT certificate (coming soon ✨).
+- Open the deployed contract in Remix or [SnowTrace Fuji](https://testnet.snowtrace.io/).  
+- Call the `message()` function.  
+- Reading data is **free** and does not consume gas.  
+
+</Step>
+
+<Step>
+
+### 2. Writing State (transaction)
+
+Let’s extend the contract with an update function:
+
+```solidity
+function setMessage(string calldata _msg) external {
+    message = _msg;
+}
