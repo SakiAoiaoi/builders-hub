@@ -14,14 +14,43 @@ This will provide practical experience with compiling, deploying, and verifying 
 - Deploy it on Avalanche Fuji using Remix and MetaMask.  
 - Verify the deployed contract on SnowTrace.  
 
-### Writing the Contract
+# Interact with a Smart Contract
 
-Here is a simple contract to start with:
+In this challenge, you will interact with a deployed contract on the Fuji Testnet.  
+If you succeed, you will earn an NFT certificate.
+
+## Get Test Funds
+
+To deploy and interact, you need test AVAX on Fuji.  
+[Get Test Funds](https://build.avax.network/docs/dapps/smart-contract-dev/get-test-funds)
+
+## Steps
+
+1. Open [Remix IDE](https://remix.ethereum.org).  
+2. Create a new Solidity file (e.g., **HelloAvalanche.sol**) and paste:
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract HelloWorld {
-    string public message = "Hello, Avalanche!";
+contract UnburnableToken {
+    string public message = "Hello Avalanche!";
 }
+```
+
+# Submit Your Contract
+
+Great job deploying your first contract 🎉  
+
+Next, copy your **contract address** from Remix.
+
+![Remix Deployment Example](/images/deploy-example.png)
+
+---
+
+## Submission
+
+Use the form below to submit your contract address:  
+[Submit Contract Address](https://example.com/submit)
+
+If the address is valid, you will receive an NFT certificate (coming soon ✨).
