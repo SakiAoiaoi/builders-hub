@@ -28,16 +28,26 @@ To deploy and interact, you need test AVAX on Fuji.
 
 1. Open [Remix IDE](https://remix.ethereum.org). If you’re new to Remix, check out [this guide](https://build.avax.network/docs/dapps/smart-contract-dev/deploy-with-remix-ide).
 
-2. Create a new Solidity file (e.g., **HelloAvalanche.sol**) and paste:
+Create a new Solidity file (e.g., LittleRobot.sol) and paste:
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract UnburnableToken {
-    string public message = "Hello Avalanche!";
+contract LittleRobot {
+    string public message = "🤖 Hello! I’m a little robot now living on the Avalanche blockchain!";
 }
 ```
+
+2. Compile with Solidity ^0.8.20.  
+   *Compiling means translating your Solidity code into bytecode that the blockchain can understand. Make sure to select the compiler version that matches the pragma specified in your contract (e.g., ^0.8.20).*
+
+3. Connect your wallet and deploy the contract.  
+   *Once deployed, a unique contract address will be generated on the blockchain — like a birth certificate proving your little robot has come to life.*
+
+## What this contract does?
+
+By deploying this simple contract, a little robot comes to life on the Avalanche Fuji testnet chain. When you call the `message()` function, the robot introduces itself with a friendly greeting.
 
 # Submit Your Contract
 
